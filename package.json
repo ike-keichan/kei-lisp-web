@@ -1,5 +1,5 @@
 {
-  "name": "KeiLisp-onWeb",
+  "name": "kei-lisp-web",
   "version": "0.1.0",
   "private": true,
   "description": "このプログラムはJSでLisp処理系を作成したものWebブラウザで実行可能にしたものです。",
