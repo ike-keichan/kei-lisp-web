@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import { installProcessShim } from './shims/process';
+import { installProcessShim } from './shims/installProcessShim';
 import App from './App.vue';
 
 installProcessShim();
