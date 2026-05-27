@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
 import { LispInterpreter, Cons, KeiLispError } from 'kei-lisp';
-import { replOutput } from './repl-bus';
+import { useReplOutput } from './composables/useReplOutput';
 
 const interpreter = new LispInterpreter();
+const replOutput = useReplOutput();
 
 const inputEl = ref<HTMLInputElement | null>(null);
 const input = ref('');
