@@ -35,6 +35,7 @@ cdr
 car
 defun
 printc
+terpri
 
 # フォント名 (CSS)
 Ricty
