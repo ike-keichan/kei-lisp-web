@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { installProcessShim } from './installProcessShim';
 import { useReplOutput } from '../composables/useReplOutput';
+import { installProcessShim } from './installProcessShim';
 
 type FakeStream = { write(chunk: unknown): boolean };
 type FakeProcess = { stdout: FakeStream; stderr: FakeStream };

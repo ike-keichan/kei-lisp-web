@@ -22,9 +22,7 @@ type ProcessLike = {
  * @param target - process-like object to patch. Defaults to the global
  *   `process`. Overridable for testing.
  */
-export const installProcessShim = (
-  target: ProcessLike = process as unknown as ProcessLike,
-): void => {
+export const installProcessShim = (target: ProcessLike = process): void => {
   const replOutput = useReplOutput();
   const sink: MinimalWritable = {
     write(chunk) {
