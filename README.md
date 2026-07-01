@@ -3,6 +3,8 @@
 [![CI](https://github.com/ike-keichan/kei-lisp-web/actions/workflows/ci.yml/badge.svg)](https://github.com/ike-keichan/kei-lisp-web/actions/workflows/ci.yml)
 [![Deploy](https://github.com/ike-keichan/kei-lisp-web/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/ike-keichan/kei-lisp-web/actions/workflows/deploy-pages.yml)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D24.0.0-brightgreen.svg)](https://nodejs.org/)
+[![kei-lisp](https://img.shields.io/npm/v/kei-lisp.svg?label=kei-lisp)](https://www.npmjs.com/package/kei-lisp)
+[![kei-lisp-plugin-graphics](https://img.shields.io/npm/v/kei-lisp-plugin-graphics.svg?label=kei-lisp-plugin-graphics)](https://www.npmjs.com/package/kei-lisp-plugin-graphics)
 
 [kei-lisp](https://github.com/ike-keichan/kei-lisp) と
 [kei-lisp-plugin-graphics](https://github.com/ike-keichan/kei-lisp-plugin-graphics)
