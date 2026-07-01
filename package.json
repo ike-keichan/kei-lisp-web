@@ -16,7 +16,8 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "kei-lisp": "^2.2.0",
+    "kei-lisp": "^2.3.0",
+    "kei-lisp-plugin-graphics": "^1.0.1",
     "vue": "^3.5.0"
   },
   "devDependencies": {

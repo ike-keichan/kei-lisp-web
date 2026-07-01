@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
 import { LispInterpreter, Cons, KeiLispError } from 'kei-lisp';
+import { createGraphicsPlugin } from 'kei-lisp-plugin-graphics';
 import { useReplOutput } from '../../composables/useReplOutput';
 
 const interpreter = new LispInterpreter();
 const replOutput = useReplOutput();
 
 const inputEl = ref<HTMLInputElement | null>(null);
+const canvasEl = ref<HTMLCanvasElement | null>(null);
 const input = ref('');
 const buffer = ref('');
 const history = ref<string[]>([]);
@@ -69,6 +71,9 @@ const historyNext = (): void => {
 };
 
 onMounted(() => {
+  if (canvasEl.value) {
+    interpreter.use(createGraphicsPlugin({ canvas: canvasEl.value }));
+  }
   inputEl.value?.focus();
   document.documentElement.addEventListener('click', () => {
     inputEl.value?.focus();
@@ -91,6 +96,7 @@ onMounted(() => {
         @keydown.up.prevent="historyPrev"
         @keydown.down.prevent="historyNext"
       /></pre>
+    <canvas ref="canvasEl" class="stage" width="600" height="300"></canvas>
   </div>
 </template>
 
@@ -111,5 +117,10 @@ onMounted(() => {
   font-weight: inherit;
   font-family: inherit;
   outline: none;
+}
+
+.stage {
+  display: block;
+  margin-top: 1em;
 }
 </style>

@@ -9,8 +9,11 @@ importers:
   .:
     dependencies:
       kei-lisp:
-        specifier: ^2.2.0
-        version: 2.2.0
+        specifier: ^2.3.0
+        version: 2.3.0
+      kei-lisp-plugin-graphics:
+        specifier: ^1.0.1
+        version: 1.0.1(kei-lisp@2.3.0)
       vue:
         specifier: ^3.5.0
         version: 3.5.35(typescript@5.9.3)
@@ -1018,8 +1021,14 @@ packages:
   json-stable-stringify-without-jsonify@1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
 
-  kei-lisp@2.2.0:
-    resolution: {integrity: sha512-MOyhTGe50uepxmHDcZNIrS5lYu5Szk21hN85MgHXQUTgCxikZaqUSvjcg73fyAMrR9wkdfyUxM7pgW+hKfOb3Q==}
+  kei-lisp-plugin-graphics@1.0.1:
+    resolution: {integrity: sha512-trrUu6aUy7xOA2/TVclruBehjImsDfV2LwaLv4AXSdErsjZYZK2lSyBYq/O0Z9Wb5eRD3RmLBVxs/sjHCgwqrg==}
+    engines: {node: '>=24.0.0'}
+    peerDependencies:
+      kei-lisp: ^2.2.0
+
+  kei-lisp@2.3.0:
+    resolution: {integrity: sha512-f9GCj/IzvPx64SG2svfowrOCOQ2gHe8wAAKngZdZryH6dUNIaY8z8rYY4UuOpvQ94QISL7h4/2DxgHqmKsbmDw==}
     engines: {node: '>=24.0.0'}
     hasBin: true
 
@@ -2395,7 +2404,11 @@ snapshots:
 
   json-stable-stringify-without-jsonify@1.0.1: {}
 
-  kei-lisp@2.2.0: {}
+  kei-lisp-plugin-graphics@1.0.1(kei-lisp@2.3.0):
+    dependencies:
+      kei-lisp: 2.3.0
+
+  kei-lisp@2.3.0: {}
 
   keyv@4.5.4:
     dependencies:
