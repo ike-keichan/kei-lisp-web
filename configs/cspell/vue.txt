@@ -1,0 +1,18 @@
+# Vue / Vite エコシステム用の辞書
+
+vitejs
+vite
+vitest
+vue-tsc
+vuejs
+tsc
+tsx
+composables
+composable
+onmounted
+setup
+autocomplete
+keypress
+keydown
+prev
+autobind

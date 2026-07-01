@@ -1,0 +1,40 @@
+# kei-lisp-web プロジェクト固有の辞書
+
+# kei-lisp-plugin-graphics の g 系描画関数
+gopen
+gclose
+gclear
+gsleep
+gline
+gmove
+grect
+garc
+gquadcurve
+gbezcurve
+gfill
+gstroke
+gtri
+galpha
+gcolor
+gpattern
+gshadow
+goffsetx
+goffsety
+gtext
+gtranslate
+gscale
+grotate
+gimage
+tomato
+
+# Lisp 用語
+lisp
+KeiLisp
+cons
+cdr
+car
+defun
+printc
+
+# フォント名 (CSS)
+Ricty
