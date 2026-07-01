@@ -1,5 +1,11 @@
 # kei-lisp-web
 
+[![CI](https://github.com/ike-keichan/kei-lisp-web/actions/workflows/ci.yml/badge.svg)](https://github.com/ike-keichan/kei-lisp-web/actions/workflows/ci.yml)
+[![Deploy](https://github.com/ike-keichan/kei-lisp-web/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/ike-keichan/kei-lisp-web/actions/workflows/deploy-pages.yml)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D24.0.0-brightgreen.svg)](https://nodejs.org/)
+[![kei-lisp](https://img.shields.io/npm/v/kei-lisp.svg?label=kei-lisp)](https://www.npmjs.com/package/kei-lisp)
+[![kei-lisp-plugin-graphics](https://img.shields.io/npm/v/kei-lisp-plugin-graphics.svg?label=kei-lisp-plugin-graphics)](https://www.npmjs.com/package/kei-lisp-plugin-graphics)
+
 [kei-lisp](https://github.com/ike-keichan/kei-lisp) と
 [kei-lisp-plugin-graphics](https://github.com/ike-keichan/kei-lisp-plugin-graphics)
 を組み合わせて Web ブラウザ上で動かす Lisp REPL。
@@ -23,9 +29,14 @@
 (gclose)
 ```
 
-描画関数の一覧は
-[kei-lisp-plugin-graphics の README](https://github.com/ike-keichan/kei-lisp-plugin-graphics#provided-lisp-functions)
-参照。
+利用可能な関数の詳細は各ライブラリ側のドキュメント参照:
+
+| 対象                        | ドキュメント                                                                                                                                            |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Lisp の組込関数一覧         | [kei-lisp/docs/built-in-functions.md](https://github.com/ike-keichan/kei-lisp/blob/main/docs/built-in-functions.md)                                     |
+| データ型（アトム / cons）   | [atoms.md](https://github.com/ike-keichan/kei-lisp/blob/main/docs/atoms.md) / [cons.md](https://github.com/ike-keichan/kei-lisp/blob/main/docs/cons.md) |
+| kei-lisp の Examples / API  | [kei-lisp README](https://github.com/ike-keichan/kei-lisp#readme)                                                                                       |
+| Canvas 描画関数一覧（`g…`） | [kei-lisp-plugin-graphics README](https://github.com/ike-keichan/kei-lisp-plugin-graphics#provided-lisp-functions)                                      |
 
 ## 開発
 
