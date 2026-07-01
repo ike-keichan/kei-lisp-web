@@ -1,0 +1,21 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": ["keisuke", "ikeda", "kei-lisp"],
+  "dictionaries": ["project", "vue", "tool"],
+  "dictionaryDefinitions": [
+    {
+      "name": "project",
+      "path": "./configs/cspell/project.txt"
+    },
+    {
+      "name": "vue",
+      "path": "./configs/cspell/vue.txt"
+    },
+    {
+      "name": "tool",
+      "path": "./configs/cspell/tool.txt"
+    }
+  ],
+  "ignorePaths": ["node_modules/", "dist/", "pnpm-lock.yaml", ".vite/"]
+}

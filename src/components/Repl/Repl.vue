@@ -26,7 +26,7 @@ const exec = (): void => {
   buffer.value += ' ';
   for (const ch of input.value) {
     if (ch === '(') leftParentheses.value++;
-    if (ch === ')') leftParentheses.value--;
+    else if (ch === ')') leftParentheses.value--;
     buffer.value += ch;
   }
 
@@ -38,8 +38,8 @@ const exec = (): void => {
       for (const each of aCons.loop()) {
         print(String(interpreter.eval(each)) + '\n');
       }
-    } catch (e) {
-      const msg = e instanceof KeiLispError ? e.message : String(e);
+    } catch (error) {
+      const msg = error instanceof KeiLispError ? error.message : String(error);
       print('*** ' + msg + ' ***\n');
       print(Cons.nil.toString() + '\n');
     }

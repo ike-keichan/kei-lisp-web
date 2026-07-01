@@ -1,0 +1,37 @@
+# 開発ツール・npm パッケージ名の辞書
+
+pnpm
+nodenv
+npmrc
+prettierrc
+prettierignore
+tsconfig
+gitignore
+esbuild
+tseslint
+sonarjs
+happy-dom
+run-s
+run-p
+prefetch
+
+# GitHub Actions
+setup-node
+
+# ブラウザ標準 / Node
+stdout
+stderr
+stdin
+memoryusage
+hrtime
+readonly
+noopener
+noreferrer
+
+# ライブラリ内部
+repl
+gopen
+gclose
+tomato
+
+# 日本語コメント用ローマ字（省略）
