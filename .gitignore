@@ -24,3 +24,6 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Personal files (not tracked)
+keisuke_ikeda.png

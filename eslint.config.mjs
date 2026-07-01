@@ -43,6 +43,8 @@ export default [
   {
     rules: {
       'vue/multi-word-component-names': 'off',
+      // 型定義は interface ではなく type エイリアスを使う方針
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     },
   },
   prettier,

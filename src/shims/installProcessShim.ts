@@ -1,13 +1,13 @@
 import { useReplOutput } from '../composables/useReplOutput';
 
-interface MinimalWritable {
+type MinimalWritable = {
   write(chunk: unknown): boolean;
-}
+};
 
-interface ProcessLike {
+type ProcessLike = {
   stdout: MinimalWritable;
   stderr: MinimalWritable;
-}
+};
 
 /**
  * Install minimal `stdout` / `stderr` sinks on the given process-like object
