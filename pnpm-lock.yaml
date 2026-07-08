@@ -12,8 +12,8 @@ importers:
         specifier: ^2.3.0
         version: 2.3.0
       kei-lisp-plugin-graphics:
-        specifier: ^1.1.0
-        version: 1.1.0(kei-lisp@2.3.0)
+        specifier: ^3.0.1
+        version: 3.0.1(kei-lisp@2.3.0)
       vue:
         specifier: ^3.5.39
         version: 3.5.39(typescript@6.0.3)
@@ -2191,8 +2191,8 @@ packages:
     resolution: {integrity: sha512-eQQBjBnsVtGacsG9uJNB8qOr3yA8rga4wAaGG1qRcBzSIvfhERLrWxMAM1hp5fcS6Abo8M4+bUBTekYR0qTPQw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  kei-lisp-plugin-graphics@1.1.0:
-    resolution: {integrity: sha512-7i2a1QWiu/yiEHBda5OvF0d0zLpTCfvaNFbhLHVzQ43pwAxt+c9qrDcjLVuYZlqiYAUAfMxl5iloY9zYCQC2mQ==}
+  kei-lisp-plugin-graphics@3.0.1:
+    resolution: {integrity: sha512-FeaZTX3eSqo1e14M20mTUjNvPWZvPkkyGRG7NJd6DXNe/u20FHnxyPFG8Ewp2dl/KZUqvkLex74jXk6mqs+E6w==}
     engines: {node: '>=24.0.0'}
     peerDependencies:
       kei-lisp: ^2.2.0
@@ -5234,7 +5234,7 @@ snapshots:
 
   jsx-ast-utils-x@0.1.0: {}
 
-  kei-lisp-plugin-graphics@1.1.0(kei-lisp@2.3.0):
+  kei-lisp-plugin-graphics@3.0.1(kei-lisp@2.3.0):
     dependencies:
       kei-lisp: 2.3.0
 
