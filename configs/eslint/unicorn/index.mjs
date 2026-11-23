@@ -20,6 +20,8 @@ export const unicornConfigs = [
       'unicorn/consistent-boolean-name': OFF,
       // Node API 互換のため意図的にネストしたクロージャを保つケース (nodeModule.ts の createRequire 等) と衝突するため無効化
       'unicorn/consistent-function-scoping': OFF,
+      // JSDoc / TSDoc の行頭の `*` を取り除かせる規則 (v80 で追加)。このプロジェクトは行頭に `*` を付ける標準の書き方で統一しているため無効化
+      'unicorn/no-asterisk-prefix-in-documentation-comments': OFF,
     },
   },
 ];
